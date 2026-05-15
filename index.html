@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - LMS-SU</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="top-nav">
+        <div class="logo">
+            <svg class="logo-icon" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="45" fill="none" stroke="#444" stroke-width="2"/>
+                <circle cx="50" cy="50" r="5" fill="#444"/>
+                <g stroke="#444" stroke-width="1">
+                    <!-- Generating a complex network pattern like in the image -->
+                    <line x1="50" y1="50" x2="50" y2="10"/><line x1="50" y1="50" x2="50" y2="90"/>
+                    <line x1="50" y1="50" x2="10" y2="50"/><line x1="50" y1="50" x2="90" y2="50"/>
+                    <line x1="50" y1="50" x2="22" y2="22"/><line x1="50" y1="50" x2="78" y2="78"/>
+                    <line x1="50" y1="50" x2="22" y2="78"/><line x1="50" y1="50" x2="78" y2="22"/>
+                    <line x1="50" y1="50" x2="35" y2="15"/><line x1="50" y1="50" x2="65" y2="85"/>
+                    <line x1="50" y1="50" x2="15" y2="35"/><line x1="50" y1="50" x2="85" y2="65"/>
+                    <line x1="50" y1="50" x2="35" y2="85"/><line x1="50" y1="50" x2="65" y2="15"/>
+                    <line x1="50" y1="50" x2="15" y2="65"/><line x1="50" y1="50" x2="85" y2="35"/>
+                </g>
+                <circle cx="50" cy="50" r="2" fill="#444"/>
+            </svg>
+            <span class="logo-text">LMS-SU</span>
+        </div>
+    </header>
+
+    <div class="quiz-container">
+        <div class="breadcrumb">
+            Quiz - 1 (Pre-Mid) <span id="page-count">(page 1 of 10)</span>
+        </div>
+
+        <div class="quiz-content">
+            <aside class="left-sidebar">
+                <button class="back-btn">Back</button>
+                <div class="question-info">
+                    <div class="info-item">Question <span id="q-num-info">1</span></div>
+                    <div class="info-item status">Not yet answered</div>
+                    <div class="info-item">Marked out of 1.00</div>
+                    <div class="info-item flag">
+                        <span class="flag-icon">⚑</span> Flag question
+                    </div>
+                </div>
+            </aside>
+
+            <main class="question-main">
+                <div class="timer-location">
+                    <div class="timer-box">
+                        Time left <span id="timer">0:45:00</span>
+                    </div>
+                </div>
+                <div class="question-card">
+                    <div id="question-text" class="question-text">
+                        Loading question...
+                    </div>
+                    <div class="options-list" id="options-list">
+                        <!-- Options will be injected here -->
+                    </div>
+                </div>
+                <div class="nav-buttons">
+                    <button id="prev-btn" class="nav-btn">Previous page</button>
+                    <button id="next-btn" class="nav-btn primary">Next page</button>
+                </div>
+            </main>
+
+            <aside class="right-sidebar">
+                <div class="quiz-nav">
+                    <h3>Quiz navigation</h3>
+                    <div class="nav-grid" id="nav-grid">
+                        <!-- 10 question boxes -->
+                    </div>
+                    <a href="#" class="finish-link">Finish attempt ...</a>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
