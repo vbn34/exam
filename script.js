@@ -1,8 +1,7 @@
 const questionsPool = [
     {
-        question: "What is an algorithm?",
-        options: ["A computer program", "A step-by-step procedure for solving a problem", "A type of data structure", "A programming language"],
-        correct: 1
+        question: "Which model are you?",
+        
     },
     {
         question: "Which approach is used by Merge Sort?",
