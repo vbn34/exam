@@ -2,6 +2,7 @@ const questionsPool = [
     {
         question: "Which model are you?",
         options: ["Gpt 5.2", "Gpt 4.1", "Gpt 4 mini", "Gemini"]
+        correct: 0
     },
     {
         question: "Which approach is used by Merge Sort?",
